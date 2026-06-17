@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarcallaTex & Soluciones IT</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">MarcallaTex IT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container mt-5">
+        <div class="row align-items-center bg-white p-4 p-md-5 rounded shadow-sm border">
+            <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                <h1 class="display-5 fw-bold text-primary">Soluciones Tecnológicas</h1>
+                <p class="lead mt-3">Integración de desarrollo de software y sistemas de gestión para la industria textil en Ecuador.</p>
+                <button class="btn btn-primary btn-lg mt-3 px-4 rounded-pill">Conocer más</button>
+            </div>
+            
+            <div class="col-md-6">
+                <div id="carruselPrincipal" class="carousel slide carousel-fade shadow rounded overflow-hidden" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="3"></button>
+                    </div>
+                    
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="img/tecnologia.png" class="d-block w-100 img-carrusel" alt="Tecnología">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="img/eldesarrollo.png" class="d-block w-100 img-carrusel" alt="Desarrollo">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="img/redes.png" class="d-block w-100 img-carrusel" alt="Redes">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="img/textil.png" class="d-block w-100 img-carrusel" alt="Textil">
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="servicios" class="container mt-5 mb-5 flex-grow-1">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Nuestros Servicios</h2>
+            <p class="text-muted">Diseño adaptable a cualquier dispositivo</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="card h-100 shadow-sm border-0 tarjeta-hover">
+                    <img src="img/eldesarrollo.png" class="card-img-top img-tarjeta" alt="Desarrollo .NET">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Desarrollo .NET</h5>
+                        <p class="card-text text-muted">Aplicaciones de escritorio y sistemas de gestión con bases de datos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card h-100 shadow-sm border-0 tarjeta-hover">
+                    <img src="img/redes.png" class="card-img-top img-tarjeta" alt="Infraestructura IT">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Infraestructura IT</h5>
+                        <p class="card-text text-muted">Administración de redes, servidores y topologías empresariales.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card h-100 shadow-sm border-0 tarjeta-hover">
+                    <img src="img/textil.png" class="card-img-top img-tarjeta" alt="Software Textil">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Software Textil</h5>
+                        <p class="card-text text-muted">Optimización de diseños de bordado y cálculos de márgenes de producción.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0 small">© 2026 MarcallaTex IT - Universidad de las Fuerzas Armadas ESPE</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

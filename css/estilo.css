@@ -1,0 +1,23 @@
+/* ========================================== */
+/* ESTILOS PERSONALIZADOS MÍNIMOS             */
+/* ========================================== */
+
+/* PARTE DE ANIMACIÓN DE TARJETAS */
+.tarjeta-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tarjeta-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15) !important;
+}
+
+/* PARTE DE CONTROL DE IMÁGENES (CARRUSEL Y TARJETAS) */
+.img-carrusel {
+    height: 350px; 
+    object-fit: cover; 
+}
+
+.img-tarjeta {
+    height: 200px; 
+    object-fit: cover;
+}
