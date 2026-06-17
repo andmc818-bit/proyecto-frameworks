@@ -1,8 +1,15 @@
-/* ========================================== */
-/* ESTILOS PERSONALIZADOS MÍNIMOS             */
-/* ========================================== */
 
-/* PARTE DE ANIMACIÓN DE TARJETAS */
+/* ------------------------------------------ */
+/* CONFIGURACIÓN GENERAL DEL MAQUETADO        */
+/* ------------------------------------------ */
+html {
+    /* Hace que el salto de los enlaces del menú sea animado y suave */
+    scroll-behavior: smooth;
+}
+
+/* ------------------------------------------ */
+/* ANIMACIÓN DE LAS TARJETAS (HOVER)          */
+/* ------------------------------------------ */
 .tarjeta-hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -11,7 +18,10 @@
     box-shadow: 0 15px 25px rgba(0,0,0,0.15) !important;
 }
 
-/* PARTE DE CONTROL DE IMÁGENES (CARRUSEL Y TARJETAS) */
+/* ------------------------------------------ */
+/* CONTROL DE MEDIDAS DE IMÁGENES             */
+/* Para que no se deformen los contenedores   */
+/* ------------------------------------------ */
 .img-carrusel {
     height: 350px; 
     object-fit: cover; 

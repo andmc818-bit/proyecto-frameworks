@@ -10,15 +10,15 @@
 </head>
 <body class="bg-light d-flex flex-column min-vh-100">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">MaarcallaTex IT</a>
+            <a class="navbar-brand fw-bold" href="#inicio">MarcallaTex IT</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="menuPrincipal">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
@@ -26,12 +26,13 @@
         </div>
     </nav>
 
-    <header class="container mt-5">
+
+    <header id="inicio" class="container mt-5 pt-5">
         <div class="row align-items-center bg-white p-4 p-md-5 rounded shadow-sm border">
             <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
                 <h1 class="display-5 fw-bold text-primary">Soluciones Tecnológicas</h1>
                 <p class="lead mt-3">Integración de desarrollo de software y sistemas de gestión para la industria textil en Ecuador.</p>
-                <button class="btn btn-primary btn-lg mt-3 px-4 rounded-pill">Conocer más</button>
+                <a href="#servicios" class="btn btn-primary btn-lg mt-3 px-4 rounded-pill">Conocer más</a>
             </div>
             
             <div class="col-md-6">
@@ -71,7 +72,8 @@
         </div>
     </header>
 
-    <section id="servicios" class="container mt-5 mb-5 flex-grow-1">
+
+    <section id="servicios" class="container mt-5 pt-4">
         <div class="text-center mb-4">
             <h2 class="fw-bold">Nuestros Servicios</h2>
             <p class="text-muted">Diseño adaptable a cualquier dispositivo</p>
@@ -108,7 +110,43 @@
         </div>
     </section>
 
-    <footer class="bg-dark text-white text-center py-3 mt-5">
+
+    <section id="contacto" class="container mt-5 mb-5 pt-4 flex-grow-1">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="bg-white p-4 p-md-5 rounded shadow-sm border">
+                    <div class="text-center mb-4">
+                        <h2 class="fw-bold">Formulario de Contacto</h2>
+                        <p class="text-muted">Escríbenos para solicitar una proforma técnica</p>
+                    </div>
+                    
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label fw-semibold">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ej: Cristhian Marcalla" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="correo" class="form-label fw-semibold">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="correo" placeholder="nombre@correo.com" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label fw-semibold">Mensaje o Requerimiento</label>
+                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Detalla tu requerimiento técnico..." required></textarea>
+                        </div>
+                        
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
         <div class="container">
             <p class="mb-0 small">© 2026 MarcallaTex IT - Universidad de las Fuerzas Armadas ESPE</p>
         </div>
